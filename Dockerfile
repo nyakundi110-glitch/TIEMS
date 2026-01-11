@@ -16,9 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY *.py .
-git add Dockerfile
-git commit -m "Remove missing static and templates folders"
-git push
+
 # Create directory for logs and state
 RUN mkdir -p /app/logs /app/data
 
@@ -30,4 +28,3 @@ EXPOSE 5000
 
 # Run the application
 CMD ["python", "main.py"]
-
