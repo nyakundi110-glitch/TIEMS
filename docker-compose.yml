@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  growatt-alert:
+    build: .
+    container_name: growatt-monitor
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
+    volumes:
+      # Persist logs and state
+      - ./logs:/app/logs
+      - ./data:/app/data
+    environment:
+      - TZ=Africa/Nairobi  # Adjust to your timezone
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

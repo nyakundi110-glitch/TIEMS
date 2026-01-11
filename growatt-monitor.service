@@ -1,0 +1,21 @@
+[Unit]
+Description=Growatt Solar Monitoring Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/GrowattAlert
+ExecStart=/home/ubuntu/GrowattAlert/venv/bin/python main.py
+Restart=always
+RestartSec=10
+
+# Environment file with credentials
+EnvironmentFile=/home/ubuntu/GrowattAlert/.env
+
+# Logging
+StandardOutput=append:/home/ubuntu/GrowattAlert/logs/service.log
+StandardError=append:/home/ubuntu/GrowattAlert/logs/service-error.log
+
+[Install]
+WantedBy=multi-user.target

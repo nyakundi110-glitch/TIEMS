@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Configuration with sensitive data
+config.json
+
+# Logs
+*.log
+solar_monitor.log
+debug.log
+api_extraction.log
+
+# State files
+monitor_state.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.csv
+
+# API test results
+*_test_*.json
+*_results_*.json
+credential_analysis_*.json
+datalogger_specific_test_*.json
+
+# Temporary files
+*.tmp
+*.bak
+.replit
+uv.lock

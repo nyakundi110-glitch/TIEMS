@@ -1,0 +1,40 @@
+{
+  "growatt": {
+    "username": "ali@technolectric.com",
+    "password": "growatt786",
+    "api_token": "76k2c9kw593yo7f7d3scgb46593016ho",
+    "plant_id": "866275",
+    "device_sn": "KAM4N5W0AG",
+    "use_api": true
+  },
+  "whatsapp": {
+    "group_name": "Solar Monitoring Group",
+    "phone_number": "+1234567890"
+  },
+  "monitoring": {
+    "power_threshold": 709,
+    "voltage_threshold": 51,
+    "check_interval_minutes": 15,
+    "power_duration_hours": 1,
+    "voltage_alert_interval_hours": 1,
+    "excluded_start_hour": 11,
+    "excluded_end_hour": 14
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "solar_monitor.log"
+  },
+  "email": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender_email": "nyakundi110@gmail.com",
+    "sender_password": "kijjmnqheolgeazt",
+    "recipient_emails": [
+      "nyakundi110@gmail.com",
+      "carolinejosphat7@gmail.com"
+    ],
+    "enable_instant_alerts": true,
+    "enable_daily_reports": true,
+    "daily_report_time": "18:00"
+  }
+}

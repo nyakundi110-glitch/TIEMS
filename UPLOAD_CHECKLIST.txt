@@ -1,0 +1,62 @@
+# GrowattAlert - Files to Upload to PythonAnywhere
+
+## Core Python Files (Required)
+✅ main.py
+✅ growatt_monitor.py  
+✅ email_sender.py
+✅ performance_visualizer.py
+✅ state_manager.py
+✅ whatsapp_sender.py
+✅ web_interface.py
+✅ config_loader.py
+✅ run_monitor.py
+
+## Configuration Files (Required)
+✅ config.json (contains your credentials)
+✅ requirements.txt
+
+## Template Files (Create templates/ folder first)
+Upload to templates/ folder:
+- alert_email.html (if exists)
+- daily_report.html (if exists)  
+- dashboard.html (if exists)
+
+## Static Files (Create static/ folder first)
+Upload to static/ folder:
+- Any CSS files
+- Any image files
+
+## Optional Files (Not needed for basic monitoring)
+- test_email.py
+- send_test_to_clients.py
+- .env.example
+- DEPLOYMENT.md
+- README files
+
+## DO NOT Upload
+❌ .env (create fresh on PythonAnywhere)
+❌ venv/ folder
+❌ __pycache__/ folder
+❌ *.log files
+❌ *.pyc files
+❌ .git/ folder
+
+---
+
+## Your Current Configuration
+
+**Monitoring**:
+- Growatt account: ali@technolectric.com
+- Plant ID: 866275
+- Device: KAM4N5W0AG
+
+**Email Alerts**:
+- From: nyakundi110@gmail.com
+- To: 
+  - nyakundi110@gmail.com
+  - carolinejosphat7@gmail.com
+
+**Thresholds**:
+- Power: >709W for 1+ hour
+- Voltage: <51V
+- Daily report: 6:00 PM
