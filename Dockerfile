@@ -27,4 +27,4 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 5000
 
 # Run the application
-CMD ["python", "main.py"]
+CMD ["python", "run_monitor.py"]
